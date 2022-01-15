@@ -18,13 +18,37 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="guitars.html">Guitars</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contact">
         <h1>Contact</h1>
-        
+        <form action="#" method="Post">
+            <div class="form-wrapper">
+                <section>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="Guitar">Guitar</label>
+                    <select name="Guitar" id="Guitar">
+                        <option value="adirondack red">Adirondack Red</option>
+                        <option value="adirondack blue ">Adirondack Blue</option>
+                        <option value="adirondack black">Adirondack Black</option>
+                    </select>
+                    <div>
+                        <input type="checkbox" id="email-updates">
+                        <label for="email-updates">Sign up for email updates</label> 
+                    </div>
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </section>  
+            </div>        
+            <input type="Submit" value="Send Now" class="cta">
+        </form>       
     </main>
     <footer>
         Copyright &copy;
